@@ -426,9 +426,10 @@ img {
 .header {
   padding: 32px 0px;
   background-color: #49BCF1;
+  position: relative;
 }
 
-.header .header__iner {
+.header__iner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,14 +495,97 @@ img {
   font-size: 32px;
 }
 
+.box__content--open {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 329px;
+  padding: 39px 0px;
+  background-color: #fff;
+}
+
+.box__content--open > li {
+  margin-bottom: 32px;
+  margin-right: 0px;
+}
+
+.box__content--open > li > .header-link {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #FBD600;
+  color: #24303E;
+  margin-bottom: 0px;
+}
+
+.box__content--open > li > a {
+  color: #808397;
+}
+
+.box__content--open::after {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  border-top: 15px  solid transparent;
+  border-right: 15px  solid #fff;
+  border-left: 15px  solid transparent;
+  content: "";
+}
+
 @media only screen and (max-width: 886px) {
-  .menu {
+  .menu__list {
     display: none;
     position: absolute;
     right: 500%;
   }
   .button {
     display: inline-block;
+  }
+  .box__content--open {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 90%;
+    padding: 39px 0px;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box__content--open {
+    top: 100px;
+    right: 25px;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .box__content--open {
+    top: 100px;
+    right: 30px;
+    max-width: 329px;
   }
 }
 
