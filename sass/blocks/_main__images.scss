@@ -1,0 +1,163 @@
+.bigcontainer {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0;
+}
+
+
+.main__images__boxs {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+.main__images__boxs:nth-child(2) {
+  flex-direction: row;
+  
+}
+
+
+.main__images__item {
+  margin-right: 110px; 
+  padding-top: 158px;
+  padding-left: 20px;
+  
+}
+
+.right {
+  margin-right: 0px;
+  margin-left: 110px;
+}
+
+
+.main__images__tittle {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  color: #24303E;  
+}
+
+.main__images__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;  
+  color: #808397;
+}
+
+
+.learn-more {
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  color: #24303E;
+  z-index: 2;
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    height: 30%;
+    background-color: #FAD400;
+    border-radius: 28px;
+    opacity: 0.25;
+    content: "";
+  }
+}
+
+
+.learn-more:hover::after {
+  opacity: 1;
+}
+
+.learn-more-red {
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  color: #24303E;
+  z-index: 2;
+  
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    height: 30%;
+    background-color: #FE7766;
+    border-radius: 28px;
+    opacity: 0.25;
+    content: "";
+  }
+}
+
+.learn-more-red:hover::after {
+  opacity: 1;
+  
+}
+
+
+
+.main__images__item > div {
+  max-width: 445px;
+  width: 100%;
+}
+
+.main__images__bottom {
+  padding: 0px 190px;
+  padding-top: 398px; 
+  padding-bottom: 59px;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 720px 600px;
+}
+
+.main__images__bottom:nth-child(2) {
+  padding: 0px 190px;
+  padding-top: 398px; 
+  padding-bottom: 59px;
+  background-image: url(../../images/rig.png);
+  background-repeat: no-repeat;
+  background-size: 720px 600px;
+}
+
+.box {
+  display: flex;
+}
+
+
+.main__images__bottom__tittle {
+  max-width: 340px; 
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-tittle {
+  margin: 0;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  color: #24554A;
+}
+
+.bottom-text {
+font-family: 'Barlow';
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+color: #24554A;
+}
+
+
+
+
+
