@@ -13,6 +13,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Fraunces", "Barlow", serif;
 }
 
 main {
@@ -20,8 +21,6 @@ main {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   vertical-align: middle;
   object-fit: cover;
 }

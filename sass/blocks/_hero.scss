@@ -1,0 +1,24 @@
+
+
+.hero {
+  padding-top: 73px;
+  padding-bottom: 500px;
+  text-align: center;
+  background-image:  url(../images/herobgs.png), url(../images/herobg.png);
+  background-repeat: no-repeat;
+  background-size:30px 108px, 100% 800px;
+  background-position: center calc(50% - 100px), center bottom,;
+
+}
+
+
+
+
+
+.hero__tittle {
+  margin: 0;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  color: #FFFFFF;
+}
