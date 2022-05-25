@@ -70,7 +70,7 @@
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 
@@ -108,6 +108,7 @@
 }
 
 .box__content--open {
+  transition: all 0.5s ease;
   &::after {
     position: absolute;
     top: -15px;
@@ -117,6 +118,8 @@
     border-top: 15px  solid transparent;
     border-right: 15px  solid #fff;
     border-left: 15px  solid transparent;
+    transition: all 0.5s ease;
+
     content: "";
   }
   
@@ -146,6 +149,8 @@
   max-width: 90%;
   padding: 39px 0px;
   background-color: #fff;
+  transition: all 0.5s ease;
+
 }
   
   
@@ -162,6 +167,7 @@
   top: 100px;
   right: 25px;
   max-width: 90%;
+  transition: all 0.5s ease;
 
 }
   
@@ -175,11 +181,33 @@
   
 .box__content--open {
   top: 100px;
-  right: 30px;
-  max-width: 329px;
+  right: 0px;
+  left: 50px;
+  width: 329px;
+  transition: all 0.5s ease;
 
 }
   
   
   
 }
+
+
+
+
+@media only screen and (max-width:380px) {
+ 
+
+  
+  .box__content--open {
+    top: 100px;
+    right: 0px;
+    left: 20px;
+    width: 329px;
+    transition: all 0.5s ease;
+
+  }
+    
+    
+    
+  }
