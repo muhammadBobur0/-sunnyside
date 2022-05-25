@@ -504,6 +504,12 @@ img {
   color: #FFFFFF;
 }
 
+.bigcontainer {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0;
+}
+
 .main__images__boxs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,8 +520,22 @@ img {
           flex-direction: row-reverse;
 }
 
+.main__images__boxs:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .main__images__item {
-  padding: 158px 0px;
+  margin-right: 110px;
+  padding-top: 158px;
+  padding-left: 20px;
+}
+
+.right {
+  margin-right: 0px;
+  margin-left: 110px;
 }
 
 .main__images__tittle {
@@ -564,9 +584,81 @@ img {
   opacity: 1;
 }
 
+.learn-more-red {
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  color: #24303E;
+  z-index: 2;
+}
+
+.learn-more-red::after {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  z-index: -1;
+  height: 30%;
+  background-color: #FE7766;
+  border-radius: 28px;
+  opacity: 0.25;
+  content: "";
+}
+
+.learn-more-red:hover::after {
+  opacity: 1;
+}
+
 .main__images__item > div {
-  margin-right: 107px;
   max-width: 445px;
   width: 100%;
+}
+
+.main__images__bottom {
+  padding: 0px 190px;
+  padding-top: 398px;
+  padding-bottom: 59px;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 720px 600px;
+}
+
+.main__images__bottom:nth-child(2) {
+  padding: 0px 190px;
+  padding-top: 398px;
+  padding-bottom: 59px;
+  background-image: url(../../images/rig.png);
+  background-repeat: no-repeat;
+  background-size: 720px 600px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__images__bottom__tittle {
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-tittle {
+  margin: 0;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  color: #24554A;
+}
+
+.bottom-text {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  color: #24554A;
 }
 /*# sourceMappingURL=main.css.map */
