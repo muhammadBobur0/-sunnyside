@@ -1,7 +1,7 @@
 
 
 .main__client {
-  padding: 160px;
+  padding: 160px 0px;
   text-align: center;
 }
 
@@ -51,12 +51,12 @@
 
 .main__client__item:nth-child(2) .clients::before {
   background-image: url(../images/Thomas.png);
-
+  
 }
 
 .main__client__item:nth-child(3) .clients::before {
   background-image: url(../images/Jennie.png);
-
+  
 }
 
 
@@ -74,17 +74,41 @@
 
 .clients__strong {
   margin-bottom: 9px;
-font-weight: 900;
-font-size: 18px;
-line-height: 22px;
-color: #24303E;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: #24303E;
 }
 
 .clients__span  {
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 25px;
-color: #A7AAAD;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  color: #A7AAAD;
+}
+
+
+
+@media only screen and (max-width:886px) {
+  .main__client {
+    padding: 64px 0px;
+    text-align: center;
+  }
+  .main__client__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main__client__item {
+    max-width: 327px;
+    margin-bottom: 64px;
+  }  
+  
+  .client-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
 }
