@@ -1,0 +1,90 @@
+
+
+.main__client {
+  padding: 160px;
+  text-align: center;
+}
+
+
+.client-text {
+  margin: 0;
+  margin-bottom: 81px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;  
+  text-align: center;
+  color: #A7AAAD;
+  
+}
+
+
+.main__client__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.main__client__item {
+  max-width: 350px;
+  width: 100%;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  &::before {
+    display: inline-block;
+    margin: 0px auto;
+    margin-bottom: 58px;
+    width: 72px;
+    height: 72px;
+    background-image: url(../images/Emily.png);
+    background-repeat: no-repeat;
+    background-size: 72px;
+    background-position: center;
+    content: "";
+  }
+}
+
+.main__client__item:nth-child(2) .clients::before {
+  background-image: url(../images/Thomas.png);
+
+}
+
+.main__client__item:nth-child(3) .clients::before {
+  background-image: url(../images/Jennie.png);
+
+}
+
+
+
+.clients__blockquote {
+  margin: 0;
+  margin-bottom: 69px;
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #5B636D;  
+}
+
+.clients__strong {
+  margin-bottom: 9px;
+font-weight: 900;
+font-size: 18px;
+line-height: 22px;
+color: #24303E;
+}
+
+.clients__span  {
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 25px;
+color: #A7AAAD;
+}
