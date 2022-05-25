@@ -53,6 +53,34 @@
 
 
 .header-link:hover {
-background-color: #77CDF5;
-color: #fff;
+  background-color: #77CDF5;
+  color: #fff;
+}
+
+
+
+
+.button {
+  display: none;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+}
+
+
+
+@media only screen and (max-width:886px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 500%;
+  }
+  
+  .button {
+    display: inline-block;
+  }
+    
+  
 }
