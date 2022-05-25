@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/fraunces-v22-latin-600.woff2") format("woff2"), url("../fonts/fraunces-v22-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v22-latin-700.woff2") format("woff2"), url("../fonts/fraunces-v22-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v22-latin-900.woff2") format("woff2"), url("../fonts/fraunces-v22-latin-900.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/barlow-v12-latin-600.woff2") format("woff2"), url("../fonts/barlow-v12-latin-600.woff") format("woff");
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -362,6 +390,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Fraunces", "Barlow", serif;
 }
 
 main {
@@ -371,8 +400,6 @@ main {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
@@ -390,7 +417,89 @@ img {
 }
 
 .container {
+  max-width: 1390px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  padding: 32px 0px;
+  background-color: #49BCF1;
+}
+
+.header .header__iner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__iteam {
+  margin-right: 47px;
+}
+
+.menu__link {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 16px 32px;
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #24303E;
+  background-color: #fff;
+  border-radius: 28px;
+}
+
+.header-link:hover {
+  background-color: #77CDF5;
+  color: #fff;
+}
+
+.hero {
+  padding-top: 73px;
+  padding-bottom: 500px;
+  text-align: center;
+  background-image: url(../images/herobgs.png), url(../images/herobg.png);
+  background-repeat: no-repeat;
+  background-size: 30px 108px, 100% 800px;
+  background-position: center calc(50% - 100px), center bottom;
+}
+
+.hero__tittle {
+  margin: 0;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
