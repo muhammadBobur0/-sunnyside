@@ -66,10 +66,12 @@
   }
   
   
+
   .main__images__item  {
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: 10px;
   }
-  
   
 }
 
@@ -91,6 +93,8 @@
   
   .main__images__item  {
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: 10px;
   }
   
   
@@ -170,5 +174,12 @@
     width: 187px;
     height: 188px;
   }
+
+  .main__images__item {
+    text-align: center;
+  }
   
 }
+
+
+

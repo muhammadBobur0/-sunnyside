@@ -28,9 +28,9 @@
 @media only screen and (max-width:1440px) {
   .hero {
     background-size: 30px 108px, 100% 800px;
-
+    
   }
-
+  
   
 }
 
@@ -42,9 +42,9 @@
     padding-top: 53px;
     padding-bottom: 536px;
     background-position: center calc(50% + 35px), center bottom;
-
+    
   }
-
+  
   
 }
 
@@ -62,10 +62,25 @@
     background-color: #49BCF1;
   }
   
+
+  .hero-title {
+    text-align: center;
+  }
   
   .hero__tittle {
+    width: 327px;
+    font-weight: 900;
     font-size: 40px;
     line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+    margin: 0px auto;
+
   }
   
 }
+
+
+
+ 

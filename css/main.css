@@ -609,8 +609,6 @@ img {
     right: 0px;
     left: 20px;
     width: 329px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
   }
 }
 
@@ -659,9 +657,18 @@ img {
     background-position: center calc(50% + 0px), center bottom;
     background-color: #49BCF1;
   }
+  .hero-title {
+    text-align: center;
+  }
   .hero__tittle {
+    width: 327px;
+    font-weight: 900;
     font-size: 40px;
     line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+    margin: 0px auto;
   }
 }
 
@@ -1120,6 +1127,8 @@ img {
   }
   .main__images__item {
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: 10px;
   }
 }
 
@@ -1134,6 +1143,8 @@ img {
   }
   .main__images__item {
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: 10px;
   }
 }
 
@@ -1193,6 +1204,9 @@ img {
   .imges {
     width: 187px;
     height: 188px;
+  }
+  .main__images__item {
+    text-align: center;
   }
 }
 
